@@ -1,1 +1,13 @@
-1. settingsde istifadecinin programin rengini deyismeyini qur!
+settingsde istifadecinin programin rengini deyismeyini qur!
+dil deyisme
+sidebar icon elave et,baglayib aca bilek
+
+
+
+staff detail
+create staff
+search elave et
+edit ve delete button elave et
+
+
+
