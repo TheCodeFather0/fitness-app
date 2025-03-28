@@ -6,8 +6,8 @@ import StaffCard from "@/Components/Staff/StaffCard";
 const Staff = () => {
   return (
     <div>
-      <div className="flex justify-between font-bold text-xl sticky top-0 z-10 bg-slate-200 p-5">
-        <h2>Heyyət</h2>
+      <div className="flex justify-between p-5">
+        <h2 className="font-bold text-3xl">Heyyət</h2>
         <Link href="/create-staff">Əlavə et</Link>
       </div>
 
