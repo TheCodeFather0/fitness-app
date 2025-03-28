@@ -1,22 +1,39 @@
-import { ILinks } from "@/Interface/links";
-import { links } from "@/Mock/links";
+"use client";
+import React, { useState } from "react";
 import Link from "next/link";
-import React from "react";
+import { links } from "@/Mock/links";
+import { FiMenu, FiX } from "react-icons/fi";
+import { usePathname } from "next/navigation";
 
 const Sidebar = () => {
+  const [isOpen, setIsOpen] = useState(true);
+  const path = usePathname();
+
   return (
-    <div className="bg-slate-600 h-[calc(100vh-85px)] flex flex-col text-white gap-5">
-      {links.map(({ id, title, to }: ILinks) => {
-        return (
-          <Link
-            href={to}
-            key={id}
-            className="font-bold text-xl p-5 hover:bg-slate-500"
-          >
-            {title}
-          </Link>
-        );
-      })}
+    <div
+      className={`flex flex-col gap-5 min-h-[100vh] h-full bg-white border-r border-r-green-400 transition-all duration-300 px-2 py-5 ${
+        isOpen ? "w-[300px]" : "w-[80px]"
+      }`}
+    >
+      <button
+        className=" text-[#7BBE47] px-5"
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        {isOpen ? <FiX size={30} /> : <FiMenu size={30} />}
+      </button>
+
+      {links.map(({ id, title, to, icon }: any) => (
+        <Link
+          href={to}
+          key={id}
+          className={`font-bold px-5 hover:text-[#7BBE47] flex items-center gap-2 ${
+            path === to ? "text-[#7BBE47]" : "text-black"
+          }`}
+        >
+          <span className="text-3xl">{React.createElement(icon)}</span>
+          <span className="text-xl">{isOpen && title}</span>
+        </Link>
+      ))}
     </div>
   );
 };
