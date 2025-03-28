@@ -4,7 +4,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between px-5 items-center h-[80px] bg-white">
+    <div className="flex justify-between px-5 items-center h-[80px] bg-white shadow-md">
       <Link href="/" className="font-bold text-2xl">
         <Image src="/logo.png" alt="logo" width={150} height={150} />
       </Link>
