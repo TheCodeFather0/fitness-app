@@ -5,7 +5,7 @@ import Navbar from "@/Components/Navbar";
 import Sidebar from "@/Components/Sidebar";
 
 const poppins = Poppins({
-  weight: "100",
+  weight: "200",
 });
 
 export const metadata: Metadata = {
