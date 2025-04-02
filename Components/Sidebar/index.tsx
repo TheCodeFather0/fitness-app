@@ -6,7 +6,7 @@ import { FiMenu, FiX } from "react-icons/fi";
 import { usePathname } from "next/navigation";
 
 const Sidebar = () => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   const path = usePathname();
 
   return (
