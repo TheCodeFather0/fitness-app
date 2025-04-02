@@ -10,7 +10,7 @@ const StaffCard = ({
   ProfilePhotoUrl,
 }: any) => {
   return (
-    <div className="border-1 border-black rounded-xl relative">
+    <div className="border-1 border-[#7BBE47] rounded-xl relative">
       <Link href={`/staff/${id}`} className="absolute inset-0"></Link>
       <Image
         width={200}
@@ -20,10 +20,10 @@ const StaffCard = ({
         src={ProfilePhotoUrl}
       />
       <div className="p-3">
-        <p className="font-bold text-xl">
+        <p className="font-bold text-xl text-[#7BBE47]">
           {FirstName} {LastName}
         </p>
-        <p>{JobType}</p>
+        <p className="font-bold">{JobType}</p>
       </div>
     </div>
   );
