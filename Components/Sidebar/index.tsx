@@ -11,7 +11,7 @@ const Sidebar = () => {
 
   return (
     <div
-      className={`sticky top-0 left-0 flex flex-col gap-5 min-h-[100vh] h-full bg-white border-r border-r-green-400 transition-all duration-300 px-2 py-5 ${
+      className={`sticky top-0 left-0 flex flex-col gap-5 min-h-[100vh] h-full bg-white border-r border-r-[#7BBE47] transition-all duration-300 px-2 py-5 ${
         isOpen ? "w-[300px]" : "w-[80px]"
       }`}
     >
