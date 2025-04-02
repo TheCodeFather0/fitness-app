@@ -1,6 +1,8 @@
-export const staffData = [
+import { IStaff } from "@/Interface/staff";
+
+export const staffData: IStaff[] = [
   {
-    id: 1,
+    id: "1",
     FirstName: "Kamran",
     LastName: "Guliev",
     Email: "kamranguliev@gmail.com",
@@ -12,7 +14,7 @@ export const staffData = [
     JobType: "Personal Trainer",
   },
   {
-    id: 1,
+    id: "1",
     FirstName: "Kamran",
     LastName: "Guliev",
     Email: "kamranguliev@gmail.com",
@@ -24,7 +26,7 @@ export const staffData = [
     JobType: "Personal Trainer",
   },
   {
-    id: 1,
+    id: "1",
     FirstName: "Kamran",
     LastName: "Guliev",
     Email: "kamranguliev@gmail.com",
@@ -36,7 +38,7 @@ export const staffData = [
     JobType: "Personal Trainer",
   },
   {
-    id: 1,
+    id: "1",
     FirstName: "Kamran",
     LastName: "Guliev",
     Email: "kamranguliev@gmail.com",
@@ -48,7 +50,7 @@ export const staffData = [
     JobType: "Personal Trainer",
   },
   {
-    id: 1,
+    id: "1",
     FirstName: "Kamran",
     LastName: "Guliev",
     Email: "kamranguliev@gmail.com",
